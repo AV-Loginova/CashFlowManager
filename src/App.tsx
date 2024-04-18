@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import AddCategory from "./components/AddCategory/AddCategory";
 import AddExpense from "./components/AddExpense/AddExpense";
+import CategoryPage from "./components/CategoryPage/CategoryPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/addcategory" element={<AddCategory />} />
         <Route path="/addexpense" element={<AddExpense />} />
+        <Route path="/category/:category" element={<CategoryPage />} />
       </Routes>
       <Footer />
     </div>

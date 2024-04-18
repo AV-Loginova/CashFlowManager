@@ -1,20 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { categ } from "../../store/category/category.slice";
 
 interface Props {
-  props: {
-    id: number;
-    name: string;
-    expense: number;
-    maxExpense: number;
-    color: string;
-  };
+  props: categ;
 }
 
 function ExpenseLine({ props }: Props) {
   return (
     <tbody>
       <tr className="">
-        <td className={`w-3/5 capitalize`}>{props.name}</td>
+        <td className={`w-3/5 capitalize font-bold`}>
+          <Link to={`/category/${props.name}`}>{props.name}</Link>
+        </td>
         <td className="pr-2 text-center">{props.expense}</td>
         <td className="text-sm italic">of</td>
         <td className="text-[#a8a8a8] text-center px-2">{props.maxExpense}</td>

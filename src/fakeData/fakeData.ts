@@ -4,7 +4,11 @@ export const categories = [
       name: 'food',
       expense: 12899,
       maxExpense: 15000,
-      color: '#FF5733' // Оранжевый
+      color: '#FF5733',
+      // data: [{
+      //   comment: 'Perek',
+      //   price: 2000
+      // }]
     },
     {
       id: 2,
@@ -56,3 +60,4 @@ export const categories = [
       color: '#A033FF' // Лиловый
     }
   ];
+
